@@ -6,7 +6,7 @@
 #    By: rasingh <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/30 08:38:55 by rasingh           #+#    #+#              #
-#    Updated: 2018/06/08 08:32:26 by rasingh          ###   ########.fr        #
+#    Updated: 2018/06/11 09:49:35 by rasingh          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,6 +65,12 @@ ft_tolower \
 ft_toupper \
 ft_putendl_fd \
 ft_putnbr_fd \
+ft_lstnew \
+ft_lstdelone \
+ft_lstdel \
+ft_lstadd \
+ft_lstiter \
+ft_lstmap \
 
 SRCC = $(addsuffix .c, $(FUNCS))
 SRCO = $(addsuffix .o, $(FUNCS))

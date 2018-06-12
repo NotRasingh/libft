@@ -6,7 +6,7 @@
 /*   By: rasingh <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/08 10:00:23 by rasingh           #+#    #+#             */
-/*   Updated: 2018/06/08 11:33:04 by rasingh          ###   ########.fr       */
+/*   Updated: 2018/06/11 11:23:34 by rasingh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 {
 	t_list *tmp;
 
-	tmp = (t_list*)malloc(sizeof(t_list));;
+	tmp = (t_list*)malloc(sizeof(t_list));
 	if (!tmp)
 		return (NULL);
 	if (!content)

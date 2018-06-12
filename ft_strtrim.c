@@ -6,7 +6,7 @@
 /*   By: rasingh <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 08:07:36 by rasingh           #+#    #+#             */
-/*   Updated: 2018/06/07 09:42:33 by rasingh          ###   ########.fr       */
+/*   Updated: 2018/06/11 13:31:53 by rasingh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,10 +44,10 @@ char			*ft_strtrim(char const *s)
 	i = ft_first(s);
 	k = 0;
 	len = ft_length(s) - i + 1;
-	trim = (char*)malloc((len + 1));
-	if (i > len)
-		return ("");
-	else if (!trim)
+	if (0 > len)
+		len = 0;
+	trim = ft_strnew(len);
+	if (!trim)
 		return (NULL);
 	while (k < len)
 	{

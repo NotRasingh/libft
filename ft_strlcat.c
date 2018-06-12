@@ -6,7 +6,7 @@
 /*   By: rasingh <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/29 07:57:43 by rasingh           #+#    #+#             */
-/*   Updated: 2018/06/08 08:37:58 by rasingh          ###   ########.fr       */
+/*   Updated: 2018/06/11 13:34:40 by rasingh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcat(char *dst, char *src, size_t dstsize)
 
 	d = ft_strlen(dst);
 	s = ft_strlen(src);
-	if (dstsize >= d)
+	if (dstsize >= d + 1)
 	{
 		ft_strncat(dst, src, dstsize - d - 1);
 		return (d + s);
